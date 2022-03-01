@@ -1,0 +1,37 @@
+
+<!--Navbar-->
+ <nav Class="navbar navbar-expand-sm navbar-dark indigo" style="background-color: gray;">  
+    
+
+    <span style="font-size:50px; cursor:pointer; color:#130909;" (click)="openNav()">&#9776;</span> 
+
+    <a class="navbar-brand" href="#" >
+        <img src="../../assets/icon.png" alt="logo" style="padding-left:20px; width:60px;">
+     </a>
+         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white;">About us</a>
+            </li>
+           <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white;">Contact us</a>
+           </li>
+        </ul>
+        <form class="form-inline search" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="search"/>
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        
+ </nav> 
+
+        
+
+<div #mySidenav class="sidenav" style="background-color: rgb(23, 25, 27);">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Client</a>
+    <a href="#">Contact us</a>
+</div> 

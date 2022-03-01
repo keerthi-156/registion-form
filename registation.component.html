@@ -1,0 +1,92 @@
+
+    <form >
+    <div class="=container">
+      <h1>register</h1> 
+       <p> fill registation form</p>
+       <hr/>
+       <div class="row col-12">
+           {{user.fristName}}
+            <div class="col-6">
+                <label for="firstName"><b>Frist Name</b></label> 
+                <input
+                     type="text"
+                     placeholder="Enter Frist Name"
+                     [value]="user.fristName"
+                     
+                     name="fristName"
+                     Id="fristName"
+                     requried/>
+                </div>
+                <div class="col-6">
+                    <label for="lasttName"><b>Last Name</b></label> 
+                    <input
+                         type="text"
+                         placeholder="Enter Last Name"
+                         [value]="user.lastName"
+                         
+                         name="lastName"
+                         Id="lastName"
+                         requried/>
+                </div>
+        </div>
+
+
+        <div class="row col-12">
+            <div class="col-6">
+                <label for="phone"><b>Phone</b></label> 
+                <input
+                         type="text"
+                         placeholder="Enter phone"
+                         [value]="user.phone"
+                        
+                         name="phone"
+                         Id="phone"
+                         requried/>
+            </div>
+            
+        
+        
+            <div class="col-6">
+                <label for="email"><b>Email</b></label> 
+                <input
+                         type="text"
+                         placeholder="Enter email"
+                         [value]="user.email"
+                        
+                         name="email"
+                         Id="email"
+                         requried/>
+             </div>
+        </div>
+        <div class="row col-12">
+            <div class="col-6">
+                <label for="userName"><b>userName</b></label> 
+                <input
+                         type="text"
+                         placeholder="Enter user name"
+                         [value]="user.userName"
+                        
+                         name="userName"
+                         Id="userName"
+                       requried/>
+            </div>
+        
+        
+            <div class="col-6">
+                <label for="password"><b>Password</b></label> 
+                <input
+                         type="text"
+                         placeholder="Enter password"
+                         [value]="user.password"
+                    
+                         name="password"
+                         Id="password"
+                         requried/>
+            </div>
+        </div>
+        <button type="=button" class="registationbtn" (click)="register(user)">register</button>
+    <div class="containe signin">
+    <p >All ready have a account</p> <a href="#">Sign In</a>
+     </div>
+</div>
+</form>
